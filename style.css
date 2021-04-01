@@ -1,7 +1,103 @@
+/* Desktop Version */
 
-/* nav-bar section */
+/* Tablet version */
+@media only screen and (max-width: 1024px) {
+  /* nav-bar section */
+  .navbarMobile {
+    display: none;
+  }
+
+  .blackNav {
+    background-color: #131313;
+    width: 100%;
+    padding-right: 10px;
+    height: 32px;
+  }
+
+  .whiteNav {
+    background-color: white;
+    width: 100%;
+    padding-right: 10px;
+    height: 48px;
+  }
+
+  .navbarDesktop ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  .blankSpace {
+    width: auto;
+    flex: content;
+  }
+
+  .navbarDesktop li {
+    text-decoration: none;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blackitem a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .whiteitem a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 13px;
+  }
+
+  .whiteNav ul {
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  .yellow-box {
+    display: flex;
+    width: 100%;
+    background-color: #fd3;
+    height: 30px;
+    justify-content: start;
+    align-items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 37px;
+    font-size: 12px;
+    align-content: center;
+  }
+
+  .yellow-box p {
+    padding-top: 15px;
+  }
+
+  .searchicon {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-left: 1px solid lightgray;
+    justify-content: center;
+  }
+}
+
+/* Mobile Version */
 @media only screen and (max-width: 768px) {
-  .navbar {
+  /* nav-bar section */
+
+  .navbarDesktop {
+    display: none;
+  }
+
+  .navbarMobile {
     display: flex;
     flex-direction: row;
     width: 100%;
