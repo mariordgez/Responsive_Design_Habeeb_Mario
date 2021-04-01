@@ -28,7 +28,9 @@ The project has a nav-bar with its icons (No javascript was used in the project)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/mario-alberto-rodriguez-cota-a2860a205)
 
 👤 **Habeeb Edun**
-
+- GitHub: [@edungit](https://github.com/edungit)
+- Twitter: [Edunaty1](https://twitter.com/Edunaty1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/edun-habeeb-635680131/)
 
 
 ## 🤝 Contributing
