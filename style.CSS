@@ -1,0 +1,412 @@
+
+/* nav-bar section */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    flex-wrap: wrap;
+    height: 124px;
+    margin-top: -8px;
+    z-index: 99999;
+  }
+
+  .white-space {
+    width: 55%;
+  }
+
+  .logo {
+    width: auto;
+    height: 48px;
+  }
+
+  .search {
+    width: 8%;
+    border-left: 1px solid lightgray;
+    padding-left: 10px;
+    height: 48px;
+  }
+
+  .fa-search {
+    margin-top: 15px;
+  }
+
+  .menu-bar {
+    width: 8%;
+    border-left: 1px solid lightgray;
+    padding-left: 12px;
+    height: 48px;
+    margin-right: 5px;
+  }
+
+  .fa-bars {
+    color: #f42;
+    margin-top: 15px;
+  }
+
+  .yellow-box {
+    width: 100%;
+    background-color: orange;
+    height: 76px;
+  }
+
+  /* <!--banner-box--> */
+  .banner-wrap {
+    max-width: 100%;
+    margin-left: -5px;
+    margin-top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+  }
+
+  .opal {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/opal.JPG");
+    max-width: 100%;
+    background-size: cover;
+    height: 130px;
+    margin-bottom: 10px;
+  }
+
+  .google {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/google.JPG");
+    max-width: 100%;
+    background-size: cover;
+    height: 130px;
+    margin-bottom: 10px;
+  }
+
+  .mac {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/mac.JPG");
+    max-width: 100%;
+    background-size: cover;
+    height: 130px;
+    margin-bottom: 10px;
+  }
+
+  .opal h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding-top: 25px;
+  }
+
+  .google h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding-top: 25px;
+  }
+
+  .mac h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding-top: 25px;
+  }
+
+  .opal,
+  .google,
+  .mac p {
+    font-size: small;
+    font-weight: normal;
+    color: white;
+  }
+
+  /* list section */
+  ul {
+    list-style: none;
+    margin-top: 5px;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  ul li {
+    color: black;
+    font-size: 12px;
+  }
+
+  /* Latest section */
+  .orange-title {
+    color: #f42;
+  }
+
+  .small-title {
+    color: #f42;
+  }
+  .deals {
+    color: #f42;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    margin-left: 110px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a :hover {
+    text-decoration: underline;
+  }
+
+  .lambo-wrap {
+    margin-left: -100px;
+  }
+
+  .latestnews-pic {
+    width: 75px;
+    height: 75px;
+  }
+
+  .latestnews-text {
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+  }
+
+  .latestnews-by {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+    color: #aaa;
+  }
+
+  .container1 {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template: 40px 40px / 100px auto;
+    grid-template-areas: 'pic text1''pic text2';
+    width: auto;
+    grid-row-gap: 5px;
+    text-align: left;
+  }
+
+  .picture {
+    grid-area: pic;
+  }
+
+  .text1 {
+    grid-area: text1;
+  }
+
+  .text2 {
+    grid-area: text2;
+  }
+
+  .red-box {
+    width: 100%;
+    background-color: #f42;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .red-box h2 {
+    padding-left: 60px;
+    font-weight: 800;
+    font-size: 15px;
+    padding-top: 5px;
+  }
+
+  .light-red {
+    background-color: #f7ddd7;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .light-red h2 {
+    padding-left: 60px;
+    font-weight: 800;
+    font-size: 15px;
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .light-red p {
+    padding-left: 60px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .ring-over,
+  .SwissCode,
+  .Klook {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -15px;
+    z-index: 1;
+    margin-left: 5px;
+  }
+  .left {
+    margin-left: -55px;
+  }
+  .white {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+    line-height: 1px;
+    padding-top: 4px;
+    width: 90%;
+  }
+
+  .after-white {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-top: 4px;
+    width: 90%;
+  }
+
+  /* Hard fork section */
+  .fork {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/gamestop.jpg");
+    width: 100%;
+  }
+
+  .fork2 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/mobile-vaccine.png");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork3 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/gear.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork4 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/tech.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork5 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/creative.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork6 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/podium.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork7 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/zoom.png");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork8 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/toyota.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork9 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/distract-bg.jpg");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .h-fork {
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+
+  }
+  .small-fork {
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+  }
+
+  .container2 {
+    position: relative;
+    padding-top: 75%;
+  }
+
+  .container-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: start;
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .fork h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .fork p {
+    font-size: small;
+    font-weight: normal;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .small-title-fork {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .grid-container-fork {
+    display: grid;
+    grid-template: 48px 48px / auto 96px;
+    grid-template-areas: 'test1 pic1''test2 pic1';
+    width: auto;
+    column-gap: 30px;
+    text-align: left;
+  }
+
+  .text1-fork {
+    grid-area: test1;
+  }
+
+  .text2-fork {
+    grid-area: test2;
+    padding-left: 0;
+  }
+
+  .picture-fork {
+    grid-area: pic1;
+  }
+
+  .fork-pic {
+    width: 96px;
+    height: 96px;
+  }
+
+  
+}
