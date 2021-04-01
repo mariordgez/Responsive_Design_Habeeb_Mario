@@ -32,7 +32,6 @@ a {
   align-items: center;
   text-decoration: none;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 .blankSpace {
@@ -89,8 +88,19 @@ a {
   align-items: center;
   height: 48px;
   width: 48px;
-  border-left: 1px solid lightgray;
   justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  width: 48px;
+  border-left: 1px solid lightgray;
+  height: 48px;
+}
+
+.fa-search {
+  color: #aaa;
 }
 
 /* Banner Section */
@@ -401,7 +411,6 @@ a {
     align-items: center;
     text-decoration: none;
     list-style: none;
-    flex-wrap: wrap;
   }
 
   .blankSpace {
@@ -462,7 +471,6 @@ a {
     align-items: center;
     height: 48px;
     width: 48px;
-    border-left: 1px solid lightgray;
     justify-content: center;
   }
 
@@ -786,7 +794,7 @@ a {
   }
 
   .fa-search {
-    margin-top: 15px;
+    color: #aaa;
   }
 
   .menu-bar {

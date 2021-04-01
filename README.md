@@ -6,6 +6,11 @@ The goal of this project is to build a web page that resembles a [TNW article](h
 
 ![screenshot](Images/screenshot.PNG)
 
+![screenshot](Images/screenshot1.PNG)
+
+![screenshot](Images/screenshot2.PNG)
+
+
 The project has a nav-bar with its icons (No javascript was used in the project), it also has embedded images and video to go along the pararaphs and different kinds of fonts used in it.
 
 ## Built With
