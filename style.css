@@ -111,7 +111,7 @@ a {
 .opal {
   display: flex;
   grid-area: opal;
-  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/opal.JPG");
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/opal.JPG");
   max-width: 100%;
   background-size: cover;
   height: 100%;
@@ -130,7 +130,7 @@ a {
 .google {
   display: flex;
   grid-area: google;
-  background: linear-gradient(to bottom, rgba(86, 86, 87, 0.52), rgba(0, 0, 0, 0.782)), url("images/google.JPG");
+  background: linear-gradient(to bottom, rgba(86, 86, 87, 0.52), rgba(0, 0, 0, 0.782)), url("Images/google.JPG");
   max-width: 100%;
   background-size: cover;
   height: 202px;
@@ -141,7 +141,7 @@ a {
 .mac {
   display: flex;
   grid-area: mac;
-  background: linear-gradient(to bottom, rgba(88, 88, 90, 0.52), rgba(0, 0, 0, 0.796)), url("images/mac.JPG");
+  background: linear-gradient(to bottom, rgba(88, 88, 90, 0.52), rgba(0, 0, 0, 0.796)), url("Images/mac.JPG");
   max-width: 100%;
   background-size: cover;
   height: 202px;
@@ -484,7 +484,7 @@ a {
   .opal {
     display: flex;
     grid-area: opal;
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/opal.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/opal.JPG");
     max-width: 100%;
     background-size: cover;
     height: 100%;
@@ -503,7 +503,7 @@ a {
   .google {
     display: flex;
     grid-area: google;
-    background: linear-gradient(to bottom, rgba(86, 86, 87, 0.52), rgba(0, 0, 0, 0.782)), url("images/google.JPG");
+    background: linear-gradient(to bottom, rgba(86, 86, 87, 0.52), rgba(0, 0, 0, 0.782)), url("Images/google.JPG");
     max-width: 100%;
     background-size: cover;
     height: 141px;
@@ -514,7 +514,7 @@ a {
   .mac {
     display: flex;
     grid-area: mac;
-    background: linear-gradient(to bottom, rgba(88, 88, 90, 0.52), rgba(0, 0, 0, 0.796)), url("images/mac.JPG");
+    background: linear-gradient(to bottom, rgba(88, 88, 90, 0.52), rgba(0, 0, 0, 0.796)), url("Images/mac.JPG");
     max-width: 100%;
     background-size: cover;
     height: 141px;
@@ -827,7 +827,7 @@ a {
   }
 
   .opal {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/opal.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/opal.JPG");
     max-width: 100%;
     background-size: cover;
     height: 130px;
@@ -835,7 +835,7 @@ a {
   }
 
   .google {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/google.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/google.JPG");
     max-width: 100%;
     background-size: cover;
     height: 130px;
@@ -843,7 +843,7 @@ a {
   }
 
   .mac {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/mac.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/mac.JPG");
     max-width: 100%;
     background-size: cover;
     height: 130px;
@@ -1060,7 +1060,7 @@ a {
 
   /* Hard fork section */
   .fork {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/gamestop.jpg");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/gamestop.jpg");
     width: 100%;
   }
 
@@ -1071,43 +1071,43 @@ a {
   }
 
   .fork3 {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/gear.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/gear.JPG");
     width: 100%;
     background-size: cover;
   }
 
   .fork4 {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/tech.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/tech.JPG");
     width: 100%;
     background-size: cover;
   }
 
   .fork5 {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/creative.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/creative.JPG");
     width: 100%;
     background-size: cover;
   }
 
   .fork6 {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/podium.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/podium.JPG");
     width: 100%;
     background-size: cover;
   }
 
   .fork7 {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/zoom.png");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/zoom.png");
     width: 100%;
     background-size: cover;
   }
 
   .fork8 {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/toyota.JPG");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/toyota.JPG");
     width: 100%;
     background-size: cover;
   }
 
   .fork9 {
-    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/distract-bg.jpg");
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/distract-bg.jpg");
     width: 100%;
     background-size: cover;
   }
