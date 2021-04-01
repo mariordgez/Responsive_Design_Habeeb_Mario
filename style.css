@@ -789,6 +789,7 @@ a {
     display: flex;
     justify-content: center;
     width: 48px;
+    align-items: center;
     border-left: 1px solid lightgray;
     height: 48px;
   }
