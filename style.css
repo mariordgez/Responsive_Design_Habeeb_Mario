@@ -8,6 +8,10 @@
   z-index: 99999;
 }
 
+circle {
+  fill: #fff;
+}
+
 .access {
   width: 22.25px;
   height: 29.23px;
