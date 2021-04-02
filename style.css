@@ -206,11 +206,12 @@ ul li {
   color: white;
   display: block;
 }
+
 .right {
   text-align: right;
   margin-top: 30px;
   display: block;
-  }
+}
 
 .google {
   display: flex;
@@ -956,10 +957,11 @@ ul li {
   .tnw-svg {
     display: none;
   }
+
   .right {
     display: none;
-    }
-  
+  }
+
   /* Latest News */
 
   .container1 {
@@ -1594,9 +1596,10 @@ ul li {
   .tnw-svg {
     display: none;
   }
+
   .right {
     display: none;
-    }
+  }
 
   /* list section */
   ul {
