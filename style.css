@@ -3,6 +3,26 @@
 /* nav-bar section */
 a {
   text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin-top: 5px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul li {
+  color: black;
+  font-size: 12px;
 }
 
 .navbarMobile {
@@ -29,6 +49,7 @@ a {
   align-items: center;
   text-decoration: none;
   list-style: none;
+  margin-top: 0;
 }
 
 .blankSpace {
@@ -36,7 +57,7 @@ a {
   flex: auto;
 }
 
-.navbarDesktop li {
+.navbarDesktop ul li {
   text-decoration: none;
   margin: 4px;
   align-items: center;
@@ -59,6 +80,15 @@ a {
   height: 48px;
   display: flex;
   align-items: center;
+}
+
+.navbarDesktop ul li::before {
+  content: "\2022";
+  color: transparent;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .yellow-box {
@@ -198,13 +228,100 @@ a {
   margin-right: 20px;
 }
 
+/* Latest News */
+
+.container1 {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'news1 news2 news3 news4'  'news5 news6 news7 news8';
+  width: auto;
+  grid-row-gap: 5px;
+  text-align: left;
+  grid-column-gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: 60% min-content auto / 100%;
+  grid-template-areas: 'pic''text1''text2';
+  width: 100%;
+  height: 100%;
+  grid-row-gap: 5px;
+  text-align: left;
+}
+
+.picture {
+  grid-area: pic;
+}
+
+.text1 {
+  grid-area: text1;
+}
+
+.text2 {
+  grid-area: text2;
+}
+
+.latestnews-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.latestnews-text {
+  color: black;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  width: auto;
+}
+
+.latestnews-by {
+  font-family: 'Montserrat', sans-serif;
+  font-size: x-small;
+  color: #aaa;
+}
+
+.news1 {
+  grid-area: news1;
+}
+
+.news2 {
+  grid-area: news2;
+}
+
+.news3 {
+  grid-area: news3;
+}
+
+.news4 {
+  grid-area: news4;
+}
+
+.news5 {
+  grid-area: news5;
+}
+
+.news6 {
+  grid-area: news6;
+}
+
+.news7 {
+  grid-area: news7;
+}
+
+.news8 {
+  grid-area: news8;
+}
+
 /* Latest funding */
 
 .red-container {
   display: grid;
-  grid-template: 266px/ 1fr 1fr 1fr 1fr;
+  grid-template: auto/ 1fr 1fr 1fr 1fr;
   grid-template-areas: 'ring swiss klook wolt';
   width: auto;
+  height: 100%;
   grid-row-gap: 5px;
   text-align: left;
   grid-column-gap: 10px;
@@ -212,19 +329,24 @@ a {
 
 .ring {
   grid-area: ring;
+  height: 267px;
+  margin-bottom: 50px;
 }
 
 .swiss {
   grid-area: swiss;
+  height: 267px;
 }
 
 .klook {
   grid-area: klook;
+  height: 267px;
 }
 
 .wolt {
   grid-area: wolt;
   display: block;
+  height: 267px;
 }
 
 .latest-fund-links {
@@ -254,17 +376,17 @@ a {
   padding-bottom: 5px;
 }
 
+.light-red p {
+  margin-left: 15px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .light-red h2 {
   padding-left: 60px;
   font-weight: 800;
   font-size: 15px;
   padding-top: 5px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.light-red p {
-  padding-left: 60px;
-  font-size: 12px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -287,18 +409,20 @@ a {
 .white {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  padding-left: 5px;
+  padding: 16px;
   line-height: 1px;
-  padding-top: 4px;
-  width: 90%;
+  width: 100%;
+  background-color: rgba(255, 68, 34, 0.08);
 }
 
 .after-white {
+  border-top: 2px solid #f7ddd7;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  padding-left: 5px;
-  padding-top: 4px;
-  width: 90%;
+  padding: 16px;
+  height: 94px;
+  width: 100%;
+  background-color: rgba(255, 68, 34, 0.08);
 }
 
 .invisible {
@@ -306,7 +430,197 @@ a {
   color: orange;
 }
 
+/* Fork section */
+.fork h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+  padding-left: 10px;
+}
+
+.fork p {
+  font-size: small;
+  font-weight: normal;
+  color: white;
+  padding-left: 10px;
+}
+
+.small-title-fork {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: white;
+  padding-left: 10px;
+}
+
+.forkGrid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+  grid-template-areas: 'fork1 fork2 fork3''fork4 fork5 fork6''fork7 fork8 fork9';
+  width: auto;
+  grid-row-gap: 5px;
+  text-align: left;
+  grid-column-gap: 10px;
+}
+
+.forkLatest {
+  color: #f42;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.forkItem1 {
+  grid-area: fork1;
+}
+
+.forkItem2 {
+  grid-area: fork2;
+}
+
+.forkItem3 {
+  grid-area: fork3;
+}
+
+.forkItem4 {
+  grid-area: fork4;
+}
+
+.forkItem5 {
+  grid-area: fork5;
+}
+
+.forkItem6 {
+  grid-area: fork6;
+}
+
+.forkItem7 {
+  grid-area: fork7;
+}
+
+.forkItem8 {
+  grid-area: fork8;
+}
+
+.forkItem9 {
+  grid-area: fork9;
+}
+
+.container2 {
+  position: relative;
+  padding-top: 75%;
+}
+
+.fork {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/gamestop.jpg");
+  width: 100%;
+}
+
+.fork2 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/mobile-vaccine.png");
+  width: 100%;
+  background-size: cover;
+}
+
+.fork3 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/gear.JPG");
+  width: 100%;
+  background-size: cover;
+}
+
+.fork4 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/tech.JPG");
+  width: 100%;
+  background-size: cover;
+}
+
+.fork5 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/creative.JPG");
+  width: 100%;
+  background-size: cover;
+}
+
+.fork6 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/podium.JPG");
+  width: 100%;
+  background-size: cover;
+}
+
+.fork7 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/zoom.png");
+  width: 100%;
+  background-size: cover;
+}
+
+.fork8 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/toyota.JPG");
+  width: 100%;
+  background-size: cover;
+}
+
+.fork9 {
+  background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/distract-bg.jpg");
+  width: 100%;
+  background-size: cover;
+}
+
+.h-fork {
+  font-weight: 800;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 10px;
+  color: white;
+}
+
+.small-fork {
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 10px;
+}
+
+.container-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: start;
+  font-size: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.grid-container-fork {
+  display: grid;
+  grid-template: min-content 1fr / auto 96px;
+  grid-template-areas: 'test1 pic1''test2 pic1';
+  width: auto;
+  column-gap: 30px;
+  text-align: left;
+  height: 96px;
+}
+
+.text1-fork {
+  grid-area: test1;
+}
+
+.text2-fork {
+  grid-area: test2;
+  padding-left: 0;
+}
+
+.picture-fork {
+  grid-area: pic1;
+}
+
+.fork-pic {
+  width: 96px;
+  height: 96px;
+}
+
 /* Footer section */
+
 .light-gray {
   background-color: #1d1d1d;
   width: 100%;
@@ -661,24 +975,28 @@ a {
 
   .red-container {
     display: grid;
-    grid-template: 266px/ 1fr 1fr 1fr;
+    grid-template: auto/ 1fr 1fr 1fr;
     grid-template-areas: 'ring swiss klook';
     width: auto;
     grid-row-gap: 5px;
     text-align: left;
     grid-column-gap: 10px;
+    margin-bottom: 50px;
   }
 
   .ring {
     grid-area: ring;
+    height: 267px;
   }
 
   .swiss {
     grid-area: swiss;
+    height: 267px;
   }
 
   .klook {
     grid-area: klook;
+    height: 267px;
   }
 
   .wolt {
@@ -720,12 +1038,6 @@ a {
     font-family: 'Montserrat', sans-serif;
   }
 
-  .light-red p {
-    padding-left: 60px;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-  }
-
   .ring-over,
   .SwissCode,
   .Klook {
@@ -741,26 +1053,231 @@ a {
     margin-left: -55px;
   }
 
-  .white {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    padding-left: 5px;
-    line-height: 1px;
-    padding-top: 4px;
-    width: 90%;
-  }
-
-  .after-white {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    padding-left: 5px;
-    padding-top: 4px;
-    width: 90%;
-  }
-
   .invisible {
     display: block;
     color: orange;
+  }
+
+  /* Fork section */
+  .fork h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .fork p {
+    font-size: small;
+    font-weight: normal;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .small-title-fork {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .forkGrid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+    grid-template-areas: 'fork1 fork2''fork3 fork4''fork5 fork6''fork7 fork8''fork9 fork10';
+    width: auto;
+    grid-row-gap: 5px;
+    text-align: left;
+    grid-column-gap: 10px;
+  }
+
+  .forkLatest {
+    color: #f42;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+
+  .forkItem1 {
+    grid-area: fork1;
+  }
+
+  .forkItem2 {
+    grid-area: fork2;
+  }
+
+  .forkItem3 {
+    grid-area: fork3;
+  }
+
+  .forkItem4 {
+    grid-area: fork4;
+  }
+
+  .forkItem5 {
+    grid-area: fork5;
+  }
+
+  .forkItem6 {
+    grid-area: fork6;
+  }
+
+  .forkItem7 {
+    grid-area: fork7;
+  }
+
+  .forkItem8 {
+    grid-area: fork8;
+  }
+
+  .forkItem9 {
+    grid-area: fork9;
+  }
+
+  .container2 {
+    position: relative;
+    padding-top: 75%;
+  }
+
+  .fork {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/gamestop.jpg");
+    width: 100%;
+  }
+
+  .fork2 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("images/mobile-vaccine.png");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork3 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/gear.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork4 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/tech.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork5 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/creative.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork6 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/podium.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork7 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/zoom.png");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork8 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/toyota.JPG");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .fork9 {
+    background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/distract-bg.jpg");
+    width: 100%;
+    background-size: cover;
+  }
+
+  .h-fork {
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    color: white;
+  }
+
+  .small-fork {
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+  }
+
+  .container-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: start;
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .grid-container-fork {
+    display: grid;
+    grid-template: min-content 1fr / auto 96px;
+    grid-template-areas: 'test1 pic1''test2 pic1';
+    width: auto;
+    column-gap: 30px;
+    text-align: left;
+    height: 96px;
+  }
+
+  .text1-fork {
+    grid-area: test1;
+  }
+
+  .text2-fork {
+    grid-area: test2;
+    padding-left: 0;
+  }
+
+  .picture-fork {
+    grid-area: pic1;
+  }
+
+  .fork-pic {
+    width: 96px;
+    height: 96px;
+  }
+
+  /* Latest deals section */
+  .deals1 {
+    grid-area: news1;
+  }
+
+  .deals2 {
+    grid-area: news2;
+  }
+
+  .deals3 {
+    grid-area: news3;
+  }
+
+  .deals4 {
+    grid-area: news4;
+  }
+
+  .deals5 {
+    grid-area: news5;
+  }
+
+  .deals6 {
+    grid-area: news6;
+  }
+
+  .deals7 {
+    grid-area: news7;
+  }
+
+  .deals8 {
+    grid-area: news8;
   }
 
   /* Footer section */
@@ -1117,12 +1634,6 @@ a {
     font-family: 'Montserrat', sans-serif;
   }
 
-  .light-red p {
-    padding-left: 60px;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-  }
-
   .ring-over,
   .SwissCode,
   .Klook {
@@ -1138,24 +1649,19 @@ a {
     margin-left: -55px;
   }
 
-  .white {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    padding-left: 5px;
-    line-height: 1px;
-    padding-top: 4px;
-    width: 90%;
-  }
-
-  .after-white {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    padding-left: 5px;
-    padding-top: 4px;
-    width: 90%;
-  }
-
   /* Hard fork section */
+  .forkGrid {
+    display: block;
+  }
+
+  .forkLatest {
+    color: #f42;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+
   .fork {
     background: linear-gradient(to bottom, rgba(8, 10, 24, 0.52), rgba(0, 0, 0, 0.624)), url("Images/gamestop.jpg");
     width: 100%;
@@ -1214,6 +1720,7 @@ a {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     padding-left: 10px;
+    color: white;
   }
 
   .small-fork {
@@ -1263,11 +1770,12 @@ a {
 
   .grid-container-fork {
     display: grid;
-    grid-template: 48px 48px / auto 96px;
+    grid-template: min-content 1fr / auto 96px;
     grid-template-areas: 'test1 pic1''test2 pic1';
     width: auto;
     column-gap: 30px;
     text-align: left;
+    height: 96px;
   }
 
   .text1-fork {
